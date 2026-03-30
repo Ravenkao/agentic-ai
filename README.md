@@ -1,7 +1,7 @@
 ## Demo
 
 ### 🎥 Video Demo
-[Watch Demo](./demo/demo.mp4)
+[Watch Demo](https://drive.google.com/file/d/1PMWdc9trtePjMPvjKaIkNdmAFWNWdI-h/view?usp=sharing)
 
 ### 📄 Sample Output
 See the generated report:  
