@@ -1,0 +1,3 @@
+{
+  "prompt": "Large Language Models for scientific discovery"
+}

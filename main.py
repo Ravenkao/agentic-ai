@@ -73,7 +73,11 @@ class PromptRequest(BaseModel):
 
 @app.get("/", response_class=HTMLResponse)
 def read_index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(
+        request=request,
+        name="index.html",
+        context={}
+    )
 
 
 @app.get("/api", response_class=JSONResponse)
@@ -90,8 +94,16 @@ def generate_report(req: PromptRequest):
     db.close()
 
     task_progress[task_id] = {"steps": []}
-    initial_plan_steps = planner_agent(req.prompt)
+
+    print("USING MOCK PLAN")
+
+    initial_plan_steps = [
+        "Research",
+        "Write Report"
+    ]
+
     for step_title in initial_plan_steps:
+        
         task_progress[task_id]["steps"].append(
             {
                 "title": step_title,
