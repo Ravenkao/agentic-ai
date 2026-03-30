@@ -1,3 +1,20 @@
+## Demo
+
+### 🎥 Video Demo
+[Watch Demo](./demo/demo.mp4)
+
+### 📄 Sample Output
+See the generated report:  
+👉 [Final Report](./demo/final_report.md)
+
+### What this demo shows
+- End-to-end agent workflow execution
+- Research agent using Tavily + Wikipedia
+- Writer agent generating structured report
+- Async task tracking via FastAPI endpoints
+
+----------------------------------------------------------------------
+
 # Reflective Research Agent (FastAPI + Postgres, single container)
 
 A FastAPI web app that plans a research workflow, runs tool-using agents (Tavily, arXiv, Wikipedia), and stores task state/results in Postgres.
